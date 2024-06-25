@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  prefect:
+    image: prefect-docker-guide-image
+    environment:
+      - PREFECT_API_URL=http://host.docker.internal:4200/api
+    network_mode: "host"
